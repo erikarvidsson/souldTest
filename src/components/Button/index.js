@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const ButtonContainer = styled.button`
   position: relative;
@@ -37,22 +37,19 @@ const ButtonNotification = styled.span`
   }
 `;
 
-
-
 const Button = (props) => {
   return (
     <>
       <ButtonContainer {...props} className={props.dark ? "dark" : ""}>
         {props.buttonText}
         {props.notice && (
-            <ButtonNotification>
-              <span>{props.notice}</span>
-            </ButtonNotification>
-          )}
+          <ButtonNotification>
+            <span>{props.notice}</span>
+          </ButtonNotification>
+        )}
       </ButtonContainer>
     </>
   );
+};
 
-}
-
-export default Button
+export default Button;
