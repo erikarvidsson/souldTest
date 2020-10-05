@@ -24,6 +24,9 @@ const Input = styled.input`
   border-color: white;
   border-style: hidden;
   margin: 0 2px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 44px;
 `;
 
 const ProfileContainer = styled.div`
