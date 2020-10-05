@@ -6,11 +6,11 @@ const ButtonContainer = styled.button`
   display: block;
   width: fit-content;
   z-index: 2;
-  background-color: #fff;
-  color: var(--color-dark-blue);
+  background-color: ${(props) => (props.bgColor ? props.bgColor : '#fff')};
+  color: ${props => props.color ? props.color : 'var(--color-dark-blue)' };
   border: 2px solid var(--color-dark-grey);
   border-radius: 8px;
-  padding: ${(props) => (props.padding ? props.padding : "18px 22px")};
+  padding: ${(props) => (props.padding ? props.padding : "11px 21px")};
   margin-left: ${(props) => (props.toLeft ? "auto" : "")};
   margin: ${(props) => (props.margin ? props.margin : "")};
   cursor: pointer;

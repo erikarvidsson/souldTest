@@ -48,6 +48,14 @@ const ButtonsContainer = styled.div`
     margin-top: 430px;
   }
 `;
+const ContentBox = styled.div`
+  position: absolute;
+  bottom: 46px;
+  right: 0;
+  width: 500px;
+  height: 178px;
+  border-left: 2px solid var(--color-dark-grey);
+`;
 
 const Header = () => {
   return (
@@ -62,6 +70,13 @@ const Header = () => {
         />
         <Button buttonText="Boka verkstad" dark="true" />
       </ButtonsContainer>
+      <ContentBox>
+        <div></div>
+        <h3 style={{ margin: "14px 0 30px 50px", color: "#fff" }}>
+          Spetsa din roadtrip med nya sommardäck
+        </h3>
+        <Button margin="0 0 0 50px" buttonText="Köp däck" bgColor="transparent" color="#fff" padding="10px 16px"/>
+      </ContentBox>
     </HeaderContainer>
   );
 };
