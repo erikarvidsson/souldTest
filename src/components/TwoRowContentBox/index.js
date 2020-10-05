@@ -4,7 +4,8 @@ import ClickableBox from "../ClickableBox";
 import ContentBox from "../ContentBox";
 import ProfilePic from "../../assets/images/profilepic.jpg";
 import Section from "../Section";
-import bgImage from '../../assets/images/boxbg.jpg'
+import bgImage from "../../assets/images/boxbg.jpg";
+import eu from "../../assets/icons/eu.svg";
 
 const ContentContainer = styled.div`
   height: 395px;
@@ -16,16 +17,14 @@ const ContentContainer = styled.div`
   }
 `;
 
-// const ContentBox = styled.div`
-//   .buttonImgBox {
-//     display: grid;
-//     grid-template-columns: 2fr 1fr;
-//   }
-//   background-color: var(--color-dark-grey);
-//   background-image: url(${bgImage});
-//   border-radius: 25px;
-//   padding: ${(props) => props.padding};
-// `;
+const Input = styled.input`
+  width: 60px;
+  height: 90px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: hidden;
+  margin: 0 2px;
+`;
 
 const ProfileContainer = styled.div`
   display: block;
@@ -33,6 +32,7 @@ const ProfileContainer = styled.div`
   height: 85px;
   width: 85px;
   border-radius: 50%;
+  border-color: none;
   margin-left: auto;
   margin-top: 22px;
 
@@ -67,6 +67,36 @@ const TwoRowContentBox = () => {
             <ProfileContainer>
               <img src={ProfilePic} alt="profile" />
             </ProfileContainer>
+          </div>
+          <div style={{ position: "relative", top: "60px" }}>
+            <div style={{ display: "flex" }}>
+              <img
+                src={eu}
+                style={{
+                  display: "block",
+                  top: "18px",
+                  position: "relative",
+                  width: "34px",
+                }}
+              />
+              <div>
+                <h4 style={{ color: "var(--color-dark-grey)" }}>
+                  Fyll i reggnummer
+                </h4>
+                <div style={{ display: "flex" }}>
+                  <div style={{ marginRight: "5px" }}>
+                    <Input maxLength="1" />
+                    <Input maxLength="1" />
+                    <Input maxLength="1" />
+                  </div>
+                  <div style={{ marginLeft: "5px" }}>
+                    <Input maxLength="1" />
+                    <Input maxLength="1" />
+                    <Input maxLength="1" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </ContentBox>
         <ContentBox padding="30px 50px" bgImage={bgImage}>
