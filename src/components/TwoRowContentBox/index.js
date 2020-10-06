@@ -18,6 +18,15 @@ const ContentContainer = styled.div`
   }
 `;
 
+const InputBox = styled.div`
+  position: "relative";
+  top: "60px";
+
+  @media screen and (max-width: 948px) {
+    top: "0px";
+  }
+`;
+
 const Input = styled.input`
   width: 60px;
   height: 90px;
@@ -28,6 +37,10 @@ const Input = styled.input`
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 44px;
+  @media screen and (max-width: 1388px) {
+    width: 25%;
+    height: 100%;
+  }
 `;
 
 const ProfileContainer = styled.div`
@@ -44,6 +57,8 @@ const ProfileContainer = styled.div`
     width: 100%;
   }
 `;
+
+
 const PlayButtonBox = styled.div`
   display: flex;
   margin-top: 190px;
@@ -110,7 +125,7 @@ const TwoRowContentBox = () => {
               <img src={ProfilePic} alt="profile" />
             </ProfileContainer>
           </div>
-          <div style={{ position: "relative", top: "60px" }}>
+          <InputBox>
             <div style={{ display: "flex" }}>
               <img
                 src={eu}
@@ -139,7 +154,7 @@ const TwoRowContentBox = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </InputBox>
         </ContentBox>
         <ContentBox
           padding="30px 50px"
