@@ -129,6 +129,7 @@ const TwoRowContentBox = () => {
             <div style={{ display: "flex" }}>
               <img
                 src={eu}
+                alt="background"
                 style={{
                   display: "block",
                   top: "18px",

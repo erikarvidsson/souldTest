@@ -44,11 +44,15 @@ const CarSelector = () => {
 
         availableCars.map((car) => {
           selectedCars.push(car);
+          return car
         });
         availableTypes.map((car) => {
           selectedTypes.push(car);
+          return car
         });
+        return object
       });
+      return objects
     });
   }
   // let uniq = [...new Set(selectedCars)];
