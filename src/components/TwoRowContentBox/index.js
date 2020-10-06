@@ -130,7 +130,7 @@ const TwoRowContentBox = () => {
                 alt="background"
                 style={{
                   display: "block",
-                  top: "18px",
+                  top: "38px",
                   position: "relative",
                   width: "34px",
                 }}
