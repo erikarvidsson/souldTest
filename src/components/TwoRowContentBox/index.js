@@ -58,7 +58,6 @@ const ProfileContainer = styled.div`
   }
 `;
 
-
 const PlayButtonBox = styled.div`
   display: flex;
   margin-top: 190px;
@@ -108,7 +107,7 @@ const TwoRowContentBox = () => {
       <ContentContainer>
         <ContentBox padding="30px 50px">
           <div className="buttonImgBox">
-            <div>
+            <div style={{ marginRight: "auto" }}>
               <h3>Boka Verkstad</h3>
               <ClickableBox
                 data={repairs}
