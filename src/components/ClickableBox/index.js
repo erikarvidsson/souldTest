@@ -28,6 +28,9 @@ const Boxes = styled.div`
   border-radius: 10px;
   &.active {
     border: 1px solid var(--color-dark-blue);
+    h4{
+      color: var(--color-dark-blue)
+    }
   }
 `;
 const BoxIcon = styled.img`
@@ -37,6 +40,7 @@ const BoxIcon = styled.img`
   pointer-events: none;
 `;
 const BoxText = styled.h4`
+  color: ${props => props.textColor};
   text-align: center;
   pointer-events: none;
   margin: ${(props) => props.textMargin};
