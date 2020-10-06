@@ -105,7 +105,7 @@ const TwoRowContentBox = () => {
   return (
     <Section>
       <ContentContainer>
-        <ContentBox padding="30px 50px">
+        <ContentBox padding="30px 50px" paddingSmall="30px 10px">
           <div className="buttonImgBox">
             <div style={{ marginRight: "auto" }}>
               <h3>Boka Verkstad</h3>

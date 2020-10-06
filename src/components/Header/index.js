@@ -47,6 +47,9 @@ const ButtonsContainer = styled.div`
   @media screen and (max-width: 948px) {
     margin-top: 430px;
   }
+  @media screen and (max-width: 800px) {
+    margin-top: 320px;
+  }
 `;
 const ContentBox = styled.div`
   position: absolute;
@@ -55,6 +58,9 @@ const ContentBox = styled.div`
   width: 500px;
   height: 178px;
   border-left: 2px solid var(--color-dark-grey);
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Header = () => {
