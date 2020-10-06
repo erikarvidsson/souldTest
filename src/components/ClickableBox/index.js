@@ -64,6 +64,8 @@ const ClickableBox = (props) => {
       [props.dataName]: data,
     });
     setData(data);
+
+    e.preventDefault();
   };
 
   return (

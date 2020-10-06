@@ -6,6 +6,10 @@
   --color-dark-grey: #d6d9de;
 }
 
+html {
+  -webkit-tap-highlight-color:transparent;
+}
+
 @media screen and (min-width: 992px) {
   body {
     padding: 0 130px 0 130px;

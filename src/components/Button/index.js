@@ -6,8 +6,8 @@ const ButtonContainer = styled.button`
   display: block;
   width: fit-content;
   z-index: 2;
-  background-color: ${(props) => (props.bgColor ? props.bgColor : '#fff')};
-  color: ${props => props.color ? props.color : 'var(--color-dark-blue)' };
+  background-color: ${(props) => (props.bgColor ? props.bgColor : "#fff")};
+  color: ${(props) => (props.color ? props.color : "var(--color-dark-blue)")};
   border: 2px solid var(--color-dark-grey);
   border-radius: 8px;
   padding: ${(props) => (props.padding ? props.padding : "11px 21px")};
@@ -18,6 +18,11 @@ const ButtonContainer = styled.button`
     border: none;
     background-color: var(--color-dark-blue);
     color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 `;
 const ButtonNotification = styled.span`

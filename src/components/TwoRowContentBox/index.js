@@ -98,8 +98,10 @@ const repairs = [
 const TwoRowContentBox = () => {
   const [openVideo, setOpenVideo] = useState(false);
 
-  const openVideoToggle = () => {
+  const openVideoToggle = (e) => {
     setOpenVideo(!openVideo);
+
+    e.preventDefault();
   };
 
   return (
@@ -130,7 +132,7 @@ const TwoRowContentBox = () => {
                 alt="background"
                 style={{
                   display: "block",
-                  top: "38px",
+                  top: "2.6vw",
                   position: "relative",
                   width: "34px",
                 }}
