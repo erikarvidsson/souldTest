@@ -103,7 +103,6 @@ const TwoRowContentBox = () => {
     setOpenVideo(!openVideo);
   };
 
-  console.log(openVideo);
   return (
     <Section>
       <ContentContainer>
