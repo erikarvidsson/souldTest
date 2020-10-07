@@ -98,7 +98,7 @@ const CarSelector = () => {
         notice={result ? `${result.length}` : ""}
         dark="true"
         margin="48px auto 0 auto"
-        padding="20px 45px"
+        padding="18px 50px"
         noticeMargin="50px"
         buttonText="Visa bilar"
         onClick={showSelectedSwitch}
