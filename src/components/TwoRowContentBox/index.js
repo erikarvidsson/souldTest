@@ -98,10 +98,9 @@ const repairs = [
 const TwoRowContentBox = () => {
   const [openVideo, setOpenVideo] = useState(false);
 
+  //Open video modal
   const openVideoToggle = (e) => {
     setOpenVideo(!openVideo);
-
-    e.preventDefault();
   };
 
   return (

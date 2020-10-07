@@ -12,7 +12,7 @@ const App = () => {
     <SelectedCarContext.Provider value={{ selectedData, setSelectedData }}>
       <div className="App">
         <Header />
-        <h2>Hitta din nästa drömbil</h2>
+        <h2 id="cars">Hitta din nästa drömbil</h2>
         <CarSelector />
         <TwoRowContentBox />
       </div>

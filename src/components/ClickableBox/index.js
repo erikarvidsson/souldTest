@@ -51,6 +51,7 @@ const ClickableBox = (props) => {
   const [data, setData] = useState(props.data);
   const { selectedData, setSelectedData } = useContext(SelectedCarContext);
 
+  // Set item status to active/false when clicked
   const isActive = (e) => {
     let id = e.target.id;
     !e.target.classList.contains("active")

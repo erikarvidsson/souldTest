@@ -17,12 +17,14 @@ const Line = styled.hr`
   border-width: 0;
 `;
 
+//Filter selected cars
 const CarSelector = () => {
   const [showSelected, setShowSelected] = useState(false)
   const { selectedData } = useContext(SelectedCarContext);
   var selectedCars = [];
   var selectedTypes = [];
 
+  // Get all selected filter matches  
   if (selectedData) {
     let selected = Object.values(selectedData).map((objects) => {
       let newObjects = objects.filter((obj) => {
@@ -55,10 +57,12 @@ const CarSelector = () => {
       return objects
     });
   }
-  // let uniq = [...new Set(selectedCars)];
+
   let result;
+
+  // Remove none matching cars if multiple filter is selected
   if(selectedCars && selectedTypes) {
-    result = selectedCars.filter((x) => selectedTypes.includes(x));
+    result = selectedCars.filter((cars) => selectedTypes.includes(cars));
   }
   if (
     selectedTypes &&
@@ -77,6 +81,7 @@ const CarSelector = () => {
     result = selectedCars;
   }
 
+  //Show filtered cars
   const showSelectedSwitch = () => {
     setShowSelected(!showSelected)
   }
@@ -88,7 +93,7 @@ const CarSelector = () => {
         textMargin="40px 0 24px 0"
         dataName="carType"
       />
-      <ClickableBox data={cars} textMargin="20px 56px" dataName="carBrand" />
+      <ClickableBox data={cars} textMargin="20px auto" dataName="carBrand" />
       <Button
         notice={result ? `${result.length}` : ""}
         dark="true"

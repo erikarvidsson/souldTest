@@ -44,7 +44,7 @@ const ButtonNotification = styled.span`
 
 const Button = (props) => {
   return (
-    <>
+    <a {...props}>  
       <ButtonContainer {...props} className={props.dark ? "dark" : ""}>
         {props.buttonText}
         {props.notice && (
@@ -53,7 +53,7 @@ const Button = (props) => {
           </ButtonNotification>
         )}
       </ButtonContainer>
-    </>
+    </a>
   );
 };
 

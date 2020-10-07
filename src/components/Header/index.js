@@ -73,6 +73,7 @@ const Header = () => {
           buttonText="Bilar i lager"
           toLeft="true"
           notice={ourCars.length}
+          href="#cars"
         />
         <Button buttonText="Boka verkstad" dark="true" />
       </ButtonsContainer>
